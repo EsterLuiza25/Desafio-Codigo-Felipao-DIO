@@ -18,8 +18,8 @@ let personagens = [
 let i = 0;
 do {
     // Variáveis
-    let nome = personagens[i][0]; // Nome do personagem (primeira coluna da matriz)
-    let xp = personagens[i][1];   // XP do personagem (segunda coluna da matriz)
+    let nome = personagens[i][0]; 
+    let xp = personagens[i][1];   
     let nivel;
 
     // Estrutura de decisão com if e else if
@@ -43,7 +43,7 @@ do {
     // Saída
     console.log(`O personagem de nome ${nome} está no nível ${nivel}`);
 
-    i++; // Incrementa o índice para o próximo personagem
+    i++; 
 } while (i < personagens.length);
 
 

@@ -1,7 +1,7 @@
 // Desafio primeiro projeto Felipão DIO 
 // Ester Luiza
 
-// Usando vetor e matriz
+// Usando vetor 
 let personagens = [
     ["Blank", 1000],
     ["Whity", 2000],

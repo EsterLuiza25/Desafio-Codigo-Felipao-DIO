@@ -1,10 +1,6 @@
-// Desafio primeiro projeto Felipao DIO
-// Ester Luiza 
+// Desafio primeiro projeto Felipão DIO 
+// Ester Luiza
 
-// Variavéis
-   
-   
-// Matriz contendo o nome do personagem e o XP 
 let personagens = [
     ["Blank", 1000],
     ["Whity", 2000],
@@ -15,35 +11,29 @@ let personagens = [
     ["Gray", 11000]
 ];
 
-let i = 0;
-do {
-    // Variáveis
-    let nome = personagens[i][0]; 
-    let xp = personagens[i][1];   
-    let nivel;
+// Loop para percorrer todos os personagens
+for (let i = 0; i < personagens.length; i++) {
+    let nome = personagens[i][0];  
+    let xp = personagens[i][1];    
+    let nivel;                     
 
-    // Estrutura de decisão com if e else if
-    if (xp < 1001) {
+    // Definir o nível com base no XP
+    if (xp <= 1000) {
         nivel = "Ferro";
-    } else if (xp >= 1000 && xp <= 2000) {
+    } else if (xp <= 2000) {
         nivel = "Bronze";
-    } else if (xp >= 2001 && xp <= 5000) {
+    } else if (xp <= 5000) {
         nivel = "Prata";
-    } else if (xp >= 5001 && xp <= 7000) {
+    } else if (xp <= 7000) {
         nivel = "Ouro";
-    } else if (xp >= 7001 && xp <= 8000) {
+    } else if (xp <= 8000) {
         nivel = "Platina";
-    } else if (xp >= 8001 && xp <= 9000) {
+    } else if (xp <= 9000) {
         nivel = "Ascendente";
-    } else if (xp >= 10000) {
+    } else {
         nivel = "Radiante";
- 
     }
 
-    // Saída
+    // Mostrar o nome e o nível do personagem
     console.log(`O personagem de nome ${nome} está no nível ${nivel}`);
-
-    i++; 
-} while (i < personagens.length);
-
-
+}

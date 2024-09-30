@@ -1,6 +1,7 @@
 // Desafio primeiro projeto Felipão DIO 
 // Ester Luiza
 
+// Usando vetor e matriz
 let personagens = [
     ["Blank", 1000],
     ["Whity", 2000],
@@ -11,13 +12,12 @@ let personagens = [
     ["Gray", 11000]
 ];
 
-// Loop para percorrer todos os personagens
+
 for (let i = 0; i < personagens.length; i++) {
     let nome = personagens[i][0];  
     let xp = personagens[i][1];    
     let nivel;                     
 
-    // Definir o nível com base no XP
     if (xp <= 1000) {
         nivel = "Ferro";
     } else if (xp <= 2000) {
@@ -34,6 +34,6 @@ for (let i = 0; i < personagens.length; i++) {
         nivel = "Radiante";
     }
 
-    // Mostrar o nome e o nível do personagem
-    console.log(`O personagem de nome ${nome} está no nível ${nivel}`);
+// Mostrar o nome e o nível do personagem
+console.log(`O personagem de nome ${nome} está no nível ${nivel}`);
 }
